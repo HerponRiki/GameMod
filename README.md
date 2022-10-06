@@ -11,7 +11,6 @@ upgraded to different classes. Your tank can be upgraded as well to decrease bul
 - Monster spawning in waves
 - Hire mercs
 - Buy menu
-- Upgradable features on players and mercs.
 - 5 units 3 upgrades per unit per player
 ```
 
