@@ -996,6 +996,8 @@ void rvWeapon::Think ( void ) {
 	// calculate weapon position based on player movement bobbing
 	owner->CalculateViewWeaponPos( viewModelOrigin, viewModelAxis );
 
+	//Finds out where your allies are
+	// 
 	// hide offset is for dropping the gun when approaching a GUI or NPC
 	// This is simpler to manage than doing the weapon put-away animation
  	if ( gameLocal.time - hideStartTime < hideTime ) {		

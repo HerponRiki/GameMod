@@ -6700,10 +6700,14 @@ void idPlayer::UpdateFocus( void ) {
 							teammateHealth = va( "^iteh %d / ^itea %d", p->health, p->inventory.armor );
 						}
 
+						//AY NEED THIS
 						// when looking at a friendly, color the crosshair
 						if( cursor ) {
 							if( p->team == team ) {
 								cursor->HandleNamedEvent( "targetFriendly" );
+								//added code
+								gameLocal.Printf("hello World");
+
 							} else {
 								cursor->HandleNamedEvent( "clearTarget" );
 							}
@@ -6940,6 +6944,8 @@ void idPlayer::UpdateFocus( void ) {
 	
 	// no pretense at sorting here, just assume that there will only be one active
 	// gui within range along the trace
+
+	//Might need this
 	bool wasTargetFriendly = targetFriendly;
 	targetFriendly = false;
 	for ( i = 0; i < listedClipModels; i++ ) {
